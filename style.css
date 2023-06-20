@@ -1,0 +1,720 @@
+/* All of the default  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+section.coaches,
+section.gallery,
+section.event {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Header */
+.main {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  background: url("./images/pexels-alexander-nadrilyanski-3651674.jpg");
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #f363;
+}
+
+label.logo {
+  color: #e0e25b;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  background-color: #555;
+}
+/* Nav bar */
+.nav {
+  height: 80px;
+  background-color: #e0e25b;
+  width: 100%;
+  color: black;
+  z-index: 999;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  background-color: #555;
+  color: #e0e25b;
+}
+
+.nav-links ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+.nav-links ul li a {
+  color: #fff3f3;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #e0e25b;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.textbox {
+  width: 90%;
+
+  color: #555;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Home screen logo and paragraph */
+
+.skew:hover {
+  transform: scale(1.3) translate(20px, 20px);
+  background-color: #f44336;
+}
+
+.content1 {
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff3f3;
+}
+.content1 .p {
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+.text-box h1,
+a.skew {
+  font-size: 61px;
+  text-align: center;
+  display: block;
+  border: 1px solid #fff3f3;
+  background: linear-gradient(to bottom, #f5f5f5, yellow);
+  transform: skewY(-5deg);
+  width: 1000px;
+  height: auto;
+  position: relative;
+  top: 150px;
+
+  left: 20%;
+  transition: 1s all ease-out;
+}
+
+@keyframes boxAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-box p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 40px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 1200px;
+  height: auto;
+  font-size: 20px;
+  left: 150px;
+  text-align: center;
+  position: relative;
+  top: 250px;
+  transform: rotate(-3deg);
+  border: 1px solid #fff;
+  background: linear-gradient(#333, #333 50%, #333 75%);
+  border-radius: 20%;
+
+  color: #e0e25b;
+  animation-name: boxAnimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  transition-duration: 250ms;
+  transition-delay: 100ms;
+  transition-property: color, text-shadow;
+  transition-timing-function: ease-in-out;
+}
+
+.text-box p:hover {
+  cursor: pointer;
+}
+/* Calendly  */
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid#555;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+
+  cursor: pointer;
+  text-align: center;
+  background-color: #555;
+  bottom: -20px;
+}
+
+.hero-btn:hover {
+  border: 1px solid #fff;
+  transition: 1s;
+  background-color: #e0e25b;
+  text-align: center;
+  color: #fff;
+}
+/* Why us styling */
+.About {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+/* Vision and mission statement */
+.row {
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  flex-basis: 46%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  width: 300px;
+  font-size: smaller;
+  transition: 0.5s;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 8%;
+  position: relative;
+  bottom: 50px;
+}
+
+.item-container {
+  position: relative;
+  margin: 24px;
+  width: 320px;
+  height: 570px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.img-container,
+.body-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.body-container {
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(24, 83, 122, 0.6);
+  opacity: 0;
+  transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.item-container:hover .overlay {
+  opacity: 1;
+  height: 150px;
+}
+/* Event styling */
+.event-info {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.title,
+.price {
+  color: #e0e25b;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 12px;
+}
+
+.info {
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  color: #e0e25b;
+}
+
+.separator {
+  width: 20%;
+  height: 6px;
+  background-color: #e0e25b;
+  margin-bottom: 16px;
+}
+
+.additional-info {
+  border-top: 1px solid #bbb;
+  margin-top: 12px;
+  padding: 28px;
+  padding-bottom: 0;
+}
+
+.additional-info .info {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #e0e25b;
+}
+
+.info i {
+  color: #18537a;
+  font-size: 1.1em;
+  margin-right: 4px;
+}
+
+.info span {
+  color: #18537a;
+  font-weight: bolder;
+}
+
+.action {
+  color: #fff;
+  border: 3px solid #fff;
+  background-color: transparent;
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  outline: none;
+  cursor: pointer;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: background-color 0.4s, top 0.4s;
+}
+
+.item-container:hover .action {
+  top: 50px;
+}
+
+.action:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* Gallery  */
+
+@keyframes slider {
+  0% {
+    background-image: url("./images/football-488714_640.jpg");
+  }
+  35% {
+    background-image: url("./images/football-257489_640.webp");
+  }
+  75% {
+    background-image: url("./images/football-1396740_640.jpg");
+  }
+}
+.main-div {
+  width: 70%;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("./images/football-488714_640.jpg");
+  background-size: 100% 100%;
+  box-shadow: 1px 2px 10px 5px #a9a8a8;
+  animation: slider 9s infinite linear;
+}
+
+.card {
+  display: inline-block;
+  height: 570px;
+  width: 320px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  margin: 10px 5px;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-title {
+  text-decoration: underline;
+}
+
+.card-text {
+  padding: 10px;
+}
+
+.card-title {
+  font-weight: 900;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-content {
+  padding: 10px 0 15px;
+  font-size: 14px;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.gallery-images img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.gallery-images img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff3f3;
+}
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+  content: #f3f3f3;
+}
+.box .content:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15%;
+  background: #e0e25b;
+  top: -10px;
+}
+.left .content p {
+  text-align: justify;
+}
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+.left .content .social a {
+  padding: 0 2px;
+}
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover {
+  background: #e0e25b;
+}
+.center .content .fas {
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover {
+  background: #e0e25b;
+}
+.center .content .text {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #f3f3f3;
+}
+.center .content .phone {
+  margin: 15px 0;
+  color: #f3f3f3;
+}
+.right form .text {
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #fff3f3;
+}
+.right form .msg {
+  margin-top: 10px;
+}
+.right form input,
+.right form textarea {
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+  color: #f3f3f3;
+}
+.right form input:focus,
+.right form textarea:focus {
+  outline-color: #3498db;
+}
+.right form input {
+  height: 35px;
+}
+.right form .btn {
+  margin-top: 10px;
+}
+.right form .btn button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #e0e25b;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.right form .btn button:hover {
+  background: #000;
+}
+.bottom center {
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span {
+  color: #fff3f3;
+}
+.bottom center a {
+  color: #e0e25b;
+  text-decoration: none;
+}
+.bottom center a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box {
+    margin: 5px 0;
+  }
+}
+
+div.content p {
+  color: #f3f3f3;
+}
+
+/* new gallery */
+
+.container1 {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.main-info {
+}
