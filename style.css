@@ -1025,6 +1025,7 @@ section .events ul li .details {
   float: left;
 }
 }
+   
 
 @media(max-width:777px) {
 
@@ -1051,6 +1052,30 @@ section .events ul {
     bottom: 75px;
 } 
 }
+
+
+@media(max-width:907px) {
+
+  .nav-links ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+
+label.logo {
+  color: #f44336;
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 40px;
+  font-weight: bold;
+  background-color: #fff;
+}
+}
+
+
+
 
 .blockquote-wrapper {
   display: flex;
@@ -1100,6 +1125,7 @@ section .events ul {
    .blockquote h1 {
        font-size: 60px;
   }
+
 
 }
 
