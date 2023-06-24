@@ -21,10 +21,10 @@ section.event {
   text-align: center;
   font-size: 30px;
 }
-section.coaches{
+section.coaches {
   text-align: center;
   font-size: 30px;
-  margin-top: 500px;
+  margin-top: 200px;
 }
 /* Header */
 .main {
@@ -755,6 +755,15 @@ section .leftBox {
             padding: 0;
         }
         /* Styling the three events section */
+        #flexbox{
+          display: flex;
+        }
+
+        #flexbox .leftBox, .events{
+          align-items: center;
+          justify-content: center;
+          margin: 10px;
+        }
         section .events {
             position: relative;
             width: 50%;
@@ -872,6 +881,7 @@ section .leftBox {
     width: 70%;
     position: relative;
     left: 150px;
+    top: 114px;
 }
 
   label.logo {
@@ -1027,30 +1037,31 @@ section .events ul li .details {
 }
    
 
-@media(max-width:777px) {
+@media(max-width:818px) {
 
   section .leftBox .content {
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
-    padding: 40px;
+    padding: 20px;
     transition: .5s;
     width: 70%;
     position: relative;
-    left: 50px;
+    left: 25px;
 }
 section .events ul {
     position: relative;
     left: 0%;
     top: 50%;
     transform: translateY(-50%);
-    margin-right: 10px;
-    padding: 10px;
+    margin-right: 5px;
+    padding: 5px;
     box-sizing: border-box;
     border: 1px solid black;
     height: auto;
-    width: 80%;
+    width: 70%;
     bottom: 75px;
 } 
+
 }
 
 
@@ -1059,7 +1070,7 @@ section .events ul {
   .nav-links ul li a {
     color: #000;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 }
@@ -1140,3 +1151,23 @@ label.logo {
    padding-top: 20px;
    z-index: 1;
 }
+
+@media(max-width:546px){
+  .coaches h1{
+    font-size: 45px;
+    position: relative;
+    right: 25%; }
+
+  section.coaches {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 500px;
+    position: relative;
+    top: 300px;
+    bottom: 300px;
+}
+}
+
+
+
+  
