@@ -24,7 +24,6 @@ section.event {
 section.coaches {
   text-align: center;
   font-size: 30px;
-  margin-top: 200px;
 }
 /* Header */
 .main {
@@ -765,13 +764,14 @@ section .leftBox {
           margin: 10px;
         }
         section .events {
-            position: relative;
-            width: 50%;
-            height: 100%;
-            float: right;
-            box-sizing: border-box;
-            margin-top: 250px;
-        }
+          position: relative;
+          width: 50%;
+          height: 10%;
+          float: right;
+          box-sizing: border-box;
+          margin-top: 250px;
+          bottom: 50px;
+      }
         /* Styling the links of
         the events section */
         section .events ul {
@@ -824,7 +824,7 @@ section .leftBox {
         /* Styling the texts of time
         class of events section */
         section .events ul li .time h2 span {
-            font-size: 30px;
+            font-size: 50px;
         }
  
         /* Styling the details
@@ -871,46 +871,73 @@ section .leftBox {
             color: #fff;
             border-color: #e91e63;}
 
-@media(max-width:1521px){
+@media(max-width:1790px){
+  .row {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
 
+
+}
+
+.course-col {
+  flex-basis: 46%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  width: 1100px;
+  font-size: smaller;
+  transition: 0.5s;
+}
+  #flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 160px;
+
+    
+    
+}
   section .leftBox .content {
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
-    padding: 40px;
+    padding: 3px;
     transition: .5s;
-    width: 70%;
+    width: 80%;
     position: relative;
     left: 150px;
-    top: 114px;
+    top: 100px;
 }
 
   label.logo {
     color: #f44336;
-    font-size: 35px;
+    font-size: 3vw;
     line-height: 80px;
     padding: 0 50px;
     font-weight: bold;
     background-color: #fff;
   }
 
-  .nav-links ul li a {
-    color: #000;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;}
-
+  
     section .leftBox .content h1 {
       margin: 0;
-      padding: 0;
-      font-size: 20px;
+      padding: 30px;
+      font-size: 2.5vw;
       text-transform: uppercase;
   }
 
   section .leftBox .content p {
     margin: 5px 0 0;
-    padding: 0;
-    font-size: 10px;
+    margin: 10px;
+    font-size: 1.4vw;
+    padding: 20px;
 }
 
 section .events ul li .time h2 {
@@ -921,26 +948,25 @@ section .events ul li .time h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 25px;
+  font-size: 3.6vw;
   line-height: 30px;
 }
 section .events ul li .time h2 span {
-  font-size: 15px;
+  font-size: 3.6vw;
 }
 
 section .events ul li .details h3 {
   position: relative;
-  margin: -10;
+  margin: 10px;
   padding: 0;
-  font-size: 15px;
-  
+  font-size: 1.4vw;
 }
 
 section .events ul li .details p {
   position: relative;
   margin: 10px 0 0;
   padding: 0;
-  font-size: 9px;
+  font-size: 1.4vw;
 }
 
 section .events ul li .details a {
@@ -949,27 +975,27 @@ section .events ul li .details a {
   padding: 10px 15px;
   border: 1.5px solid #262626;
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 1.4vw;
   transition: .5s;
   color: #000;
 }
 
 section .events ul {
   position: relative;
-  left: 20%;
+  left: 10%;
   top: 50%;
   transform: translateY(-50%);
-  margin-right: 10px;
+  margin-right: 5px;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid black;
-  height: auto;
-  width: 70%;
-  bottom: 75px;
+  height: 300px;
+  width: 90%;
+  bottom: 35px;
 }
 
 section .leftBox {
-  width: 50%;
+  width: 80%;
   height: 100%;
   float: left;
   padding: 25px;
@@ -985,25 +1011,25 @@ section .events ul li .details {
   float: left;
 }
 
-section .events ul li .time{
+section .events ul li .time {
   position: relative;
-    padding: 2px;
-    background: #262626;
-    box-sizing: border-box;
-    width: 30%;
-    height: 50%;
-    float: left;
-    text-align: center;
-    transition: .5s;
-
+  padding: 0px;
+  background: #262626;
+  box-sizing: border-box;
+  width: 19%;
+  height: 120%;
+  float: left;
+  text-align: center;
+  transition: .5s;
 }
+
 section .events {
   position: relative;
-  width: 50%;
-  height: 100%;
+  width: 90%;
+  height: inherit;
   float: right;
   box-sizing: border-box;
-  margin-top: 250px;}
+  margin-top: 250px;
 }
 
 @media(max-width:1247px) {
@@ -1434,4 +1460,4 @@ section.coaches {
     left: 25px;
     top: 114px;
 }
-}
+}}
