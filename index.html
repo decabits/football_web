@@ -6,15 +6,25 @@
     <title>GoalMasters | Pro Football Academy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <section class="header">
         <nav>
             <!-- <a href="index.html"><img src="./images/pngtree-letter-j-logo-png-png-image_3310077.jpg" width="5%" height="5%"></a> -->
             <label class="logo"> GoalMasters </label>
-            <div class="nav-links">
+            <button class="navbar-toggle" id="navbar-toggle">
+              <span class="toggle-icon"></span>
+              <span class="toggle-icon"></span>
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="nav-links" id="navLinks">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#About">About</a></li>
@@ -23,9 +33,26 @@
                     <li><a href="#footer">Contact Us</a></li>
                 </ul>
 
+
             </div>
-        
+
+            <div class="topnav">
+              <a href="#home" class="active">Logo</a>
+              <!-- Navigation links (hidden by default) -->
+              <div id="myLinks">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+              </div>
+              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+
         </nav>
+
+
         
     </section>
     
@@ -345,27 +372,27 @@
             <h2>Book a Meeting</h2>
             <div class="content">
               <a class="hero-btn" href="">Book a Meeting</a>
-                <div class="social">
+                <!-- <div class="social">
                 <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
                 <a href="#"><span class="fab fa-twitter"></span></a>
                 <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
                 <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="center box">
             <h2>Address</h2>
             <div class="content">
               <div class="place">
-                <span class="fas fa-map-marker-alt"></span>
+                <!-- <span class="fas fa-map-marker-alt"></span> -->
                 <span class="text">Birendranagar, Surkhet</span>
               </div>
               <div class="phone">
-                <span class="fas fa-phone-alt"></span>
+                <!-- <span class="fas fa-phone-alt"></span> -->
                 <span class="text">+089-765432100</span>
               </div>
               <div class="email">
-                <span class="fas fa-envelope"></span>
+                <!-- <span class="fas fa-envelope"></span> -->
                 <span class="text">abc@example.com</span>
               </div>
             </div>
@@ -429,6 +456,35 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+var navLinks = document.getElementById("navLinks")
+function showMenu() {
+  navLinks.style.right = "0";
+
+}
+
+function hideMenu(){
+  navLinks.style.right = "-200px";
+}
+
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+// Function to toggle the navbar menu
+function toggleNavbarMenu() {
+  const navbarMenu = document.getElementById('navbar-menu');
+  navbarMenu.classList.toggle('collapsed');
+}
+
+// Event listener for navbar toggle button
+const navbarToggle = document.getElementById('navbar-toggle');
+navbarToggle.addEventListener('click', toggleNavbarMenu);
 
 </script>
 </body>
