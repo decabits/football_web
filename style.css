@@ -24,7 +24,6 @@ section.event {
 section.coaches{
   text-align: center;
   font-size: 30px;
-  margin-top: 500px;
 }
 /* Header */
 .main {
@@ -44,11 +43,13 @@ nav {
 label.logo {
   color: #f44336;
   font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
+  line-height: 70px;
+  padding: 0 50px;
   font-weight: bold;
   background-color: #fff;
+  height: 65px;
 }
+
 /* Nav bar */
 .nav {
   height: 80px;
@@ -722,12 +723,14 @@ div.content p {
 }
 
 section .leftBox {
-            width: 50%;
-            height: 100%;
-            float: left;
-            padding: 50px;
-            box-sizing: border-box;
-        }
+  width: 40%;
+  height: auto;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  left: 5%;
+}
         /* Styling the background of
             left floating section */
         section .leftBox .content {
@@ -767,22 +770,24 @@ section .leftBox {
         /* Styling the links of
         the events section */
         section .events ul {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            margin: 0;
-            padding: 10px;
-            box-sizing: border-box;
-            border: 1px solid black;
-        }
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          margin: 0;
+          padding: 10px;
+          box-sizing: border-box;
+          border: 1px solid black;
+          width: 90%;
+          left: 25%;
+      }
         /* Styling the lists of the event section */
         section .events ul li {
-            list-style: none;
-            background: #fff;
-            box-sizing: border-box;
-            height: 200px;
-            margin: 15px 0;
-        }
+          list-style: none;
+          background: #fff;
+          box-sizing: border-box;
+          height: 250px;
+          margin: 15px 0;
+      }
         /* Styling the time class of events section */
         section .events ul li .time {
             position: relative;
@@ -843,7 +848,7 @@ section .leftBox {
             position: relative;
             margin: 10px 0 0;
             padding: 0;
-            font-size: 12px;
+            font-size: 1.2vh;
         }
         /* Styling the links of details
         class of events section */
@@ -875,6 +880,28 @@ section .leftBox {
     left: 150px;
 
 }
+.row{
+  
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 65px;
+    flex-direction: column;
+flex-grow: 100%;
+}
+
+.course-col {
+  flex-basis: 46%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  width: 120%;
+  font-size: smaller;
+  transition: 0.5s;
+}
 
   label.logo {
     color: #f44336;
@@ -883,6 +910,7 @@ section .leftBox {
     padding: 0 50px;
     font-weight: bold;
     background-color: #fff;
+    height: 65px;
   }
 
   .nav-links ul li a {
@@ -932,7 +960,8 @@ section .events ul li .details p {
   position: relative;
   margin: 10px 0 0;
   padding: 0;
-  font-size: 9px;
+  font-size: 1.8vh;
+  margin-left: 10px;
 }
 
 section .events ul li .details a {
@@ -947,26 +976,28 @@ section .events ul li .details a {
 }
 
 section .events ul {
-  position: relative;
-  left: 20%;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-right: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid black;
-  height: auto;
-  width: 70%;
-  bottom: 75px;
+  
+    position: relative;
+    left: 0%;
+    top: 20%;
+    transform: translateY(-50%);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: auto;
+    width: 90%;
+    bottom: 175px;
+
 }
 
 section .leftBox {
-  width: 50%;
+  width: 90%;
   height: 100%;
   float: left;
   padding: 25px;
   box-sizing: border-box;
-  left: -10%;
+  position: relative;
+  right: 15%;
 }
 }
 
@@ -978,18 +1009,16 @@ section .events ul li .details {
   height: 70%;
   float: left;
 }
-
-section .events ul li .time{
+section .events ul li .time {
   position: relative;
-    padding: 2px;
-    background: #262626;
-    box-sizing: border-box;
-    width: 30%;
-    height: 50%;
-    float: left;
-    text-align: center;
-    transition: .5s;
-
+  padding: 2px;
+  background: #262626;
+  box-sizing: border-box;
+  width: 30%;
+  height: 90%;
+  float: left;
+  text-align: center;
+  transition: .5s;
 }
 section .events {
   position: relative;
@@ -1098,9 +1127,11 @@ section .events ul {
    bottom: -43px;
    right: 30px;
 }
-
+.topnav{
+  height: 65px;
+}
 /* increase header size after 600px */
-@media all and (min-width: 600px) {
+@media all and (max-width: 600px) {
    .blockquote h1 {
        font-size: 60px;
   }
@@ -1125,6 +1156,7 @@ section .events ul {
 .topnav {
   background-color: #fff;
   overflow: hidden;
+ 
 }
 
 /* Style the links inside the navigation bar */
@@ -1133,11 +1165,13 @@ section .events ul {
   display: block;
   color: #000;
   text-align: center;
-  padding: 22px 10px;
+  padding: 10px 10px;
   text-decoration: none;
   font-size: 17px;
   font-family: "Poppins",sans-serif;
   text-transform: uppercase;
+  position: relative;
+  top: 40%;
 }
 
 /* Change the color of links on hover */
@@ -1275,6 +1309,12 @@ section.coaches {
 
 }
 
+#flexbox{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 46%;
+  row-gap: 30px;
+}
 /* Blockquote subheader */
 .blockquote h4 {
   position: relative;
@@ -1319,9 +1359,23 @@ label.logo {
   font-weight: bold;
   background-color: #fff;
 }
+
+#flexbox{
+  display: flex;
+  flex-direction: column;
+
+
+}
 }
 
 @media(max-width:818px) {
+
+  #flexbox{
+    display: flex;
+    flex-direction: column;
+    row-gap: 65px;
+    
+  }
 
   section .events ul {
       position: relative;
@@ -1380,4 +1434,7 @@ label.logo {
     float: left;
   }
   }
-     
+
+  .header{
+    height: 65px;
+  }
