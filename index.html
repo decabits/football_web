@@ -47,7 +47,7 @@
     </section>
     
 
-    <section class="main">
+    <section class="main darken">
       <!-- <div class="text-box">
         <h1 class="skew">Join for Beginners Football</h1>
         <br><br>
@@ -58,18 +58,46 @@
 
     <!-- Headin - Join for beginners football
 tagline - Discover the joy of playing football and unleash your potential! -->
+<div class="message-container"> 
+
+    <span class="message">J</span>
+    <span class="message">o</span>
+    <span class="message">i</span>
+    <span class="message">n</span>
+    <span class="message">  </span>
+    <span class="message">f</span>
+    <span class="message">o</span>
+    <span class="message">r</span>
+    <span class="message">  </span>
+    <span class="message">b</span>
+    <span class="message">e</span>
+    <span class="message">g</span>
+    <span class="message">i</span>
+    <span class="message">n</span>
+    <span class="message">n</span>
+    <span class="message">e</span>
+    <span class="message">r</span>
+    <span class="message">s</span>
+    <span class="message">  </span>
+    <span class="message">f</span>
+    <span class="message">o</span>
+    <span class="message">o</span>
+    <span class="message">t</span>
+    <span class="message">b</span>
+    <span class="message">a</span>
+    <span class="message">l</span>
+    <span class="message">l</span>
+ 
   
-    <div class="blockquote-wrapper">
-      <div class="blockquote">
-        <h1>
-          Start before you are ready
-         </h1>
-      </div>
-    </div>
+   <p class="tagline">Discover the joy of playing football and unleash your potential!</p>
+  </div> 
+
+  <a class="hero-btn-main" href="">Book a Meeting</a>
   </section> 
     <section class="About" id="About">
         <h1> About Us</h1><br>
-        <p>  Casa Football Academy is a young and dynamic football academy that has made a name for itself in the local football scene in Dehradun, Uttarakhand. The academy's legacy of winning tournaments in 2022 has been impressive, and it reflects the dedication and hard work put in by the academy's coaches, staff, and players.</p><div class="row">
+        <p>  Casa Football Academy is a young and dynamic football academy that has made a name for itself in the local football scene in Dehradun, Uttarakhand. The academy's legacy of winning tournaments in 2022 has been impressive, and it reflects the dedication and hard work put in by the academy's coaches, staff, and players.</p>
+        <div class="row-about">
             <div class="course-col">
                 <h3>
                     Mission Statement
@@ -473,29 +501,6 @@ function myFunction() {
 }
 
 
-
-const h1 = document.querySelector("h1")
-        const letters = h1.innerText.split('')
-        let html = ""
-
-        letters.forEach(letter => {
-            let classes = ''
-            if(letter !== ' ') {
-                classes = 'letter js-letter'
-            }
-            html = html + `<span class='${classes}'>${letter}</span>`
-        })
-
-        h1.innerHTML = html
-        const jsLetters = document.querySelectorAll(".js-letter")
-        jsLetters.forEach(node => {
-            node.addEventListener("mouseover", function(event) {
-                this.classList.add("active")
-            })
-            node.addEventListener("mouseout", function(event) {
-                this.classList.remove("active")
-            })
-        })
 
 </script>
 </body>

@@ -60,7 +60,81 @@ section.coaches{
   background-size: cover;
   z-index: 0;
   background: url("./images/pexels-alexander-nadrilyanski-3651674.jpg");
+  
+  background-blend-mode: darken;
   background-repeat: no-repeat;
+}
+
+span.message{
+  position: relative;
+  
+  left: 20%;
+  transform: translate(-30%,-50%);
+  font-family: "Pacifico",cursive;
+  font-size: 90px;
+  color: #e0e25b;
+  
+}
+
+.message-container{
+  position: relative;
+  top: 10%;
+}
+
+@keyframes enlarge {
+
+  50%{
+    transform: scale(1.5) rotate(20deg); 
+  }
+  
+}
+
+p.tagline {
+  position: relative;
+  top: 90%;
+  left: 50%;
+  transform: translate(-27%,45%);
+  color: #e0e25b;
+  font-size: 30px;
+}
+
+.hero-btn-main {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid#555;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  top: 20%;
+  left:45%;
+  cursor: pointer;
+  text-align: center;
+  background-color: #555;
+  bottom: -20px;
+}
+
+.hero-btn-main:hover {
+  border: 1px solid #fff;
+  transition: 1s;
+  background-color: #e0e25b;
+  text-align: center;
+  color: #fff;
+}
+/* Why us styling */
+.About {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.darken{
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 nav {
   display: flex;
@@ -172,9 +246,15 @@ a.skew {
   top: 150px;
 
   left: 20%;
-  transition: 1s all ease-out;
+  
 }
+@keyframes enalrge {
 
+  50% {
+    transform: scale(1.5) rotate(20deg);
+  }
+   
+}
 @keyframes boxAnimation {
   0% {
     opacity: 1;
@@ -265,7 +345,7 @@ a.skew {
   font-family: "Poppins", sans-serif;
 }
 /* Vision and mission statement */
-.row {
+.row, .row-about {
   margin: 5%;
   display: flex;
   justify-content: space-between;
@@ -928,15 +1008,24 @@ section .leftBox {
     left: 150px;
 
 }
-.row{
-  
-    margin: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    row-gap: 65px;
-    flex-direction: column;
-flex-grow: 100%;
+.row {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 65px;
+  flex-direction: row;
+  flex-grow: 100%;
+}
+
+.row-about{
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 65px;
+  flex-direction: column;
+  flex-grow: 100%;
 }
 
 .course-col {
@@ -1155,6 +1244,7 @@ section .events ul li .details a {
 }
 
 
+
 }
 
 @media(max-width:777px) {
@@ -1191,35 +1281,40 @@ section .events ul {
 
 /* Blockquote main style */
 .blockquote {
-   position: relative;
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 800;
-   color: #fff;
-   padding: 30px 0;
-   width: 100%;
-   max-width: 500px;
-   z-index: 1;
-   margin: 80px auto;
-   align-self: center;
-   border-top: solid 1px;
-   border-bottom: solid 1px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  padding: 30px 0;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+  margin: 80px auto;
+  align-self: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  color: transparent;
 }
 
 /* Blockquote header */
 .blockquote h1 {
-   position: relative;
-   color: #e0e25b;
-   font-size: 40px;
-   font-weight: 800;
-   line-height: 1;
-   margin: 0;
+  font-size: 90px;
+  font-family: 'Pacifico', cursive;
+  display: inline-block;
+  color: #e0e25b;
+  transition: all 250ms ease-in-out;
+  width: 100%;
+
+  transition: 1s all ease-out;
+  animation-name: enlarge;
+  animation-duration: 4s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
 }
 
 /* Blockquote right double quotes */
 .blockquote:after {
    position: absolute;
    content: "”";
-   color: rgba(255, 255, 255, 1);
    font-size: 10rem;
    line-height: 0;
    bottom: -43px;
@@ -1491,7 +1586,7 @@ label.logo {
     font-size: 90px;
     font-family: 'Pacifico', cursive;
     display: inline-block;
-    color: #999;
+    color: #e0e25b;
     transition: all 250ms ease-in-out;
 }
 
