@@ -16,6 +16,33 @@ h3 {
 }
 
 
+section .leftBox .content {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  transition: .5s;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  top: 50%;
+  height: 125%;
+}
+  
+
+section .events ul {
+  position: relative;
+  left: 20%;
+  transform: translateY(-120%);
+  margin-right: 5px;
+  padding: 10px 10px 65px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: auto;
+  width: 90%;
+  bottom: -375px;
+  top: 40%;
+}
+  
 section.gallery,
 section.event {
   text-align: center;
@@ -403,7 +430,10 @@ a.skew {
   flex-basis: 46%;
   row-gap: 30px;
   margin-bottom: 10%;
+  align-items: center;
 }
+
+
 /* Gallery  */
 
 @keyframes slider {
@@ -882,7 +912,7 @@ section .leftBox {
     display: flex;
     flex-direction: column;
     flex-basis: 46%;
-    row-gap: 20px;
+    row-gap: 1%;
     height: 750px;
     transform: translateY(-20%);
     align-items: normal;
@@ -1048,23 +1078,70 @@ section .events {
 
 @media(max-width:1247px) {
 
+  section .events ul {
+    position: relative;
+    left: 120%;
+    transform: translateY(-50%);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: auto;
+    width: 90%;
+    bottom: 175px;
+}
+
+  section .events {
+    position: relative;
+    width: 90%;
+    height: 50%;
+    float: right;
+    box-sizing: border-box;
+    margin-top: -450px;
+    right: 35%;
+}
+section .events ul li .details a {
+  display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1.5px solid #262626;
+    margin-top: 8px;
+    font-size: 12px;
+    transition: .5s;
+    color: #000;
+    margin-left: 30px;
+}
+
+
+  section .leftBox .content {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    transition: .5s;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 50%;
+    height: 95%;
+}
+
   #flexbox {
     display: flex;
     flex-direction: column;
     flex-basis: 46%;
-    row-gap: 50%;
+    row-gap: 30%;
     height: 750px;
     transform: translateY(-20%);
     align-items: normal;
     margin: 80px 0 0 0;
 }
-  section .events {
-    position: relative;
-    width: 50%;
-    height: 50%;
-    float: right;
-    box-sizing: border-box;
-    margin-top: 350px;
+section .events {
+  position: relative;
+  width: 70%;
+  height: 50%;
+  float: right;
+  box-sizing: border-box;
+  margin-top: 10px;
+  left: -65%;
 }
 section .events ul li .details a {
   display: inline-block;
@@ -1381,6 +1458,18 @@ label.logo {
 }
 
 @media(max-width:818px) {
+
+  section .events ul {
+    position: relative;
+    left: 120%;
+    transform: translateY(-50%);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: auto;
+    width: 90%;
+    top: -140%;
+}
   #flexbox {
     display: flex;
     flex-direction: column;
@@ -1392,61 +1481,6 @@ label.logo {
     margin: 80px 0 30% 0;
 }
 }
-
-  section .events ul {
-    
-      position: relative;
-      left: 50%;
-      transform: translateY(-120%);
-      margin-right: 5px;
-      padding: 5px;
-      box-sizing: border-box;
-      border: 1px solid black;
-      height: auto;
-      width: 90%;
-      bottom: 75px;
-  }
-
-  
-  
-  section .leftBox .content {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    transition: .5s;
-    width: 70%;
-    position: relative;
-    left: 100px;
-    top: 114px;
-  }
-  
-  
-  
-  @media(max-width:1247px) {
-    section .events {
-      position: relative;
-      width: 90%;
-      height: 50%;
-      float: right;
-      box-sizing: border-box;
-      margin-top: -450px;
-      right: 35%;
-  }
-  section .events ul li .details a {
-    display: inline-block;
-      text-decoration: none;
-      padding: 5px 10px;
-      border: 1.5px solid #262626;
-      margin-top: 8px;
-      font-size: 12px;
-      transition: .5s;
-      color: #000;
-      margin-left: 30px;
-  }
-  
-  
-  
-  }
 
   .header{
     height: 65px;
