@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -33,7 +35,7 @@
                           
               <a href="#event">Events</a>
                           
-              <a href="gallery">Gallery</a>
+              <a href="#gallery">Gallery</a>
                           
               <a href="#footer">Contact Us</a>
               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -467,6 +469,30 @@ function myFunction() {
   }
 }
 
+
+
+const h1 = document.querySelector("h1")
+        const letters = h1.innerText.split('')
+        let html = ""
+
+        letters.forEach(letter => {
+            let classes = ''
+            if(letter !== ' ') {
+                classes = 'letter js-letter'
+            }
+            html = html + `<span class='${classes}'>${letter}</span>`
+        })
+
+        h1.innerHTML = html
+        const jsLetters = document.querySelectorAll(".js-letter")
+        jsLetters.forEach(node => {
+            node.addEventListener("mouseover", function(event) {
+                this.classList.add("active")
+            })
+            node.addEventListener("mouseout", function(event) {
+                this.classList.remove("active")
+            })
+        })
 
 </script>
 </body>

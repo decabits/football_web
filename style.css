@@ -396,6 +396,14 @@ a.skew {
 .action:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+#flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 46%;
+  row-gap: 30px;
+  margin-bottom: 10%;
+}
 /* Gallery  */
 
 @keyframes slider {
@@ -869,7 +877,17 @@ section .leftBox {
             border-color: #e91e63;}
 
 @media(max-width:1521px){
-
+  
+  #flexbox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 46%;
+    row-gap: 20px;
+    height: 750px;
+    transform: translateY(-20%);
+    align-items: normal;
+    margin: 80px 0 0 0;
+}
   section .leftBox .content {
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
@@ -960,7 +978,7 @@ section .events ul li .details p {
   position: relative;
   margin: 10px 0 0;
   padding: 0;
-  font-size: 1.8vh;
+  font-size: 1.1vh;
   margin-left: 10px;
 }
 
@@ -978,8 +996,7 @@ section .events ul li .details a {
 section .events ul {
   
     position: relative;
-    left: 0%;
-    top: 20%;
+    left: 50%;
     transform: translateY(-50%);
     padding: 10px;
     box-sizing: border-box;
@@ -1030,6 +1047,17 @@ section .events {
 }
 
 @media(max-width:1247px) {
+
+  #flexbox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 46%;
+    row-gap: 50%;
+    height: 750px;
+    transform: translateY(-20%);
+    align-items: normal;
+    margin: 80px 0 0 0;
+}
   section .events {
     position: relative;
     width: 50%;
@@ -1049,14 +1077,7 @@ section .events ul li .details a {
   color: #000;
 }
 
-section .events ul li .details {
-  padding: 5px;
-  background: #fff;
-  box-sizing: border-box;
-  width: 70%;
-  height: 70%;
-  float: left;
-}
+
 }
 
 @media(max-width:777px) {
@@ -1309,12 +1330,7 @@ section.coaches {
 
 }
 
-#flexbox{
-  display: flex;
-  flex-direction: row;
-  flex-basis: 46%;
-  row-gap: 30px;
-}
+
 /* Blockquote subheader */
 .blockquote h4 {
   position: relative;
@@ -1360,28 +1376,28 @@ label.logo {
   background-color: #fff;
 }
 
-#flexbox{
-  display: flex;
-  flex-direction: column;
 
 
-}
 }
 
 @media(max-width:818px) {
-
-  #flexbox{
+  #flexbox {
     display: flex;
     flex-direction: column;
-    row-gap: 65px;
-    
-  }
+    flex-basis: 46%;
+    row-gap: 105%;
+    height: 750px;
+    transform: translateY(-20%);
+    align-items: normal;
+    margin: 80px 0 30% 0;
+}
+}
 
   section .events ul {
+    
       position: relative;
-      left: 0%;
-      top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translateY(-120%);
       margin-right: 5px;
       padding: 5px;
       box-sizing: border-box;
@@ -1390,6 +1406,8 @@ label.logo {
       width: 90%;
       bottom: 75px;
   }
+
+  
   
   section .leftBox .content {
     color: #fff;
@@ -1402,7 +1420,7 @@ label.logo {
     top: 114px;
   }
   
-  }
+  
   
   @media(max-width:1247px) {
     section .events {
@@ -1411,7 +1429,8 @@ label.logo {
       height: 50%;
       float: right;
       box-sizing: border-box;
-      margin-top: 350px;
+      margin-top: -450px;
+      right: 35%;
   }
   section .events ul li .details a {
     display: inline-block;
@@ -1425,16 +1444,28 @@ label.logo {
       margin-left: 30px;
   }
   
-  section .events ul li .details {
-    padding: 5px;
-    background: #fff;
-    box-sizing: border-box;
-    width: 70%;
-    height: 70%;
-    float: left;
-  }
+  
+  
   }
 
   .header{
     height: 65px;
   }
+
+
+  .letter {
+    font-size: 90px;
+    font-family: 'Pacifico', cursive;
+    display: inline-block;
+    color: #999;
+    transition: all 250ms ease-in-out;
+}
+
+.letter.active {
+    transform: scale(1.5) rotate(20deg);
+    color: #e0e25b;
+}
+
+@media(max-width:600px){
+
+}
