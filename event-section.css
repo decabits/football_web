@@ -1,0 +1,77 @@
+/* CSS for the second section */
+.event-section {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.event-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: calc(100% - 48px);
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.event-card {
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card-image {
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.event-card-content {
+  padding: 20px;
+}
+
+.event-card-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-card-details {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.event-card-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.event-card-link:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    max-width: 100%;
+  }
+}
