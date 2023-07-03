@@ -864,6 +864,7 @@ footer {
   cursor: pointer;
   transition: 0.3s;
   color: #fff;
+  transform: translateX(-19%);
 }
 .right form .btn button:hover {
   background: #e0e25b;
