@@ -1772,10 +1772,6 @@ section .events ul {
   }
 }
 
-@media (max-width: 616px) {
-  .message {
-  }
-}
 
 @media (max-width: 441px) {
   section.coaches {
