@@ -855,17 +855,18 @@ footer {
 }
 .right form .btn button {
   height: 40px;
-  width: 100%;
+  width: 150%;
   border: none;
   outline: none;
-  background: #e0e25b;
+  background: #555;
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
+  color: #fff;
 }
 .right form .btn button:hover {
-  background: #000;
+  background: #e0e25b;
 }
 .bottom center {
   padding: 5px;
