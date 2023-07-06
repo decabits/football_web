@@ -8,11 +8,19 @@
   box-sizing: border-box;
 }
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .row-flex {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-basis: 46%;
   justify-content: space-between;
 }
 .topnav {
@@ -997,6 +1005,7 @@ footer {
   }
   .main-content .box {
     margin: 5px 0;
+    width: 100%;
   }
 }
 
@@ -1146,6 +1155,7 @@ div.content p {
     text-transform: uppercase;
   }
 
+ 
   section .leftBox .content h1 {
     margin: 0;
     padding: 0;
