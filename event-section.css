@@ -35,11 +35,10 @@
 }
 
 .event-card-image {
-  max-height: 200px;
+  max-height: 48%;
   object-fit: cover;
   width: 100%;
 }
-
 .event-card-content {
   padding: 20px;
 }
