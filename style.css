@@ -810,6 +810,8 @@ span{
   font-size: 36px;
   color: #333;
   margin-bottom: 40px;
+  position: relative;
+  right: -12%;
 }
 
 .gallery-images {
@@ -1847,4 +1849,32 @@ section .events ul {
     position: relative;
     bottom: -126px;
   }
+}
+
+
+.image-slideshow {
+max-width: 1000px;
+position: relative;
+}
+
+img .gallery-image {
+width: 100%
+}
+.fade {
+animation-name: fade;
+animation-duration: 2s;
+}
+@keyframes fade {
+from {opacity: .5}
+to {opacity: 1}
+}
+#gallery{
+transform: translateX(14%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery-title{
+  right: -32%;
 }
