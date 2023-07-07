@@ -1869,7 +1869,7 @@ from {opacity: .5}
 to {opacity: 1}
 }
 #gallery{
-transform: translateX(14%);
+transform: translateX(22%);
     display: flex;
     flex-direction: column;
     justify-content: center;
