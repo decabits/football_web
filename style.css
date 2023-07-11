@@ -8,13 +8,13 @@
   box-sizing: border-box;
 }
 
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 .row-flex {
@@ -64,17 +64,6 @@ html,body
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 619px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -260,9 +249,9 @@ label.logo {
   font-size: 25px;
   line-height: 70px;
   padding: 0 0 0 5%;
-  background-color: #f8f9fa!important;
+  background-color: #f8f9fa !important;
   height: 9px;
-  color: rgba(0,0,0,.55);
+  color: rgba(0, 0, 0, 0.55);
   font-weight: bolder;
 }
 /* Nav bar */
@@ -496,15 +485,15 @@ a.skew {
   font-size: 16px;
 }
 
-.about-us{
+.about-us {
   height: 100vh;
   width: 100%;
   padding: 90px 0;
   background: #ddd;
 }
-.pic{
+.pic {
   height: auto;
-  width:  302px;
+  width: 302px;
 }
 
 .about {
@@ -514,36 +503,36 @@ a.skew {
   align-items: center;
   justify-content: space-around;
   column-gap: 9%;
-  transform: translate(62%,10%);
+  transform: translate(62%, 10%);
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.text{
+.text {
   width: 540px;
 }
-.founder{
+.founder {
   font-weight: 600;
   margin-bottom: 10px;
   margin-top: 5%;
 }
-.text h5{
+.text h5 {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-span{
+span {
   color: #4070f4;
 }
-.text p{
+.text p {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 1px;
 }
-.data{
+.data {
   margin-top: 30px;
 }
-.hire{
+.hire {
   font-size: 18px;
   background: #4070f4;
   color: #fff;
@@ -553,7 +542,7 @@ span{
   border-radius: 6px;
   transition: 0.5s;
 }
-.hire:hover{
+.hire:hover {
   background: #000;
   border: 1px solid #4070f4;
 }
@@ -611,9 +600,8 @@ span{
   left: 0;
   width: 100%;
   height: 100%;
-}nav
-
-.img-container img {
+}
+nav .img-container img {
   width: 100%;
 }
 
@@ -648,14 +636,12 @@ span{
   text-decoration: none;
 }
 
-.event-card-details a:hover{
+.event-card-details a:hover {
   text-decoration: underline;
-  
 }
 
-.event-card-details a:active{
+.event-card-details a:active {
   color: #f44336;
-  
 }
 
 .title,
@@ -1147,7 +1133,6 @@ div.content p {
     flex-grow: 100%;
   }
 
-  
   .nav-links ul li a {
     color: #000;
     text-decoration: none;
@@ -1156,7 +1141,6 @@ div.content p {
     text-transform: uppercase;
   }
 
- 
   section .leftBox .content h1 {
     margin: 0;
     padding: 0;
@@ -1601,7 +1585,6 @@ section .events ul {
   }
 }
 
-
 @media (max-width: 818px) {
   section .leftBox {
     width: 90%;
@@ -1840,7 +1823,6 @@ section .events ul {
   }
 }
 
-
 @media (max-width: 441px) {
   section.coaches {
     text-align: center;
@@ -1850,37 +1832,54 @@ section .events ul {
   }
 }
 
-
 .image-slideshow {
-position: relative;
-width: 60%;
+  position: relative;
+  width: 60%;
 }
 
 img .gallery-image {
-width: 100%
+  width: 100%;
 }
 .fade {
-animation-name: fade;
-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
 }
 @keyframes fade {
-from {opacity: .5}
-to {opacity: 1}
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
-#gallery{
-transform: translateX();
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#gallery {
+  transform: translateX();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media(max-width:677px){
-  .container-fluid{
+@media (max-width: 677px) {
+  .container-fluid {
     flex-wrap: nowrap;
   }
+}
 
-  label.logo{
-    font-size: 1.5vh;
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 619px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  label.logo {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .navbar-brand > img {
+    max-width: 120px;
   }
 }
