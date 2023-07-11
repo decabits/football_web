@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="event-section.css">
   <link rel="stylesheet" href="testimonial-section.css">
   <link rel="stylesheet" href="faq-section.css">
+  <link rel="stylesheet" href="modal.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
@@ -81,7 +82,7 @@
         <h1 class="message"><span class="keyword">Join</span> for Beginners Football</h1>
         <p class="tagline">Learn, play, and grow as a beginner. Join now to
           experience the joy of football and <span class="keyword">unlock your full potential</span> on the field</p>
-        <a class="hero-btn-main" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/info-50492/30min'});return false;">Book a Session</a>
+        <a class="hero-btn-main" id="openModalBtn">Book a Session</a>
       </div>
     </div>
   </main>
@@ -288,7 +289,6 @@
   </div>
 </section>
 
-  <script src="main.js"></script>
   <br>
 
   <footer>
@@ -347,6 +347,22 @@
     </div>
   </footer>
 
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+  
+      <div class="calendly-event">
+        <h2>Event 1</h2>
+        <div id="calendlyEvent1"></div>
+      </div>
+  
+      <div class="calendly-event">
+        <h2>Event 2</h2>
+        <div id="calendlyEvent2"></div>
+      </div>
+    </div>
+  </div>
+  
   <script>
     
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -375,6 +391,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
+    <script src="main.js"></script>
 </body>
 
 </html>
