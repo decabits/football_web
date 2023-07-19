@@ -138,7 +138,7 @@ section.coaches {
   display: flex;
   width: 100%;
   background-position: center;
-  background: url("./images/Gallery/Main\ Background.jpg");
+  background: url("../images/Gallery/Main\ Background.jpg");
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -731,13 +731,13 @@ nav .img-container img {
 
 @keyframes slider {
   0% {
-    background-image: url("./images/football-488714_640.jpg");
+    background-image: url("../images/football-488714_640.jpg");
   }
   35% {
-    background-image: url("./images/football-257489_640.webp");
+    background-image: url("../images/football-257489_640.webp");
   }
   75% {
-    background-image: url("./images/football-1396740_640.jpg");
+    background-image: url("../images/football-1396740_640.jpg");
   }
 }
 .main-div {
@@ -747,7 +747,7 @@ nav .img-container img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("./images/football-488714_640.jpg");
+  background-image: url("../images/football-488714_640.jpg");
   background-size: 100% 100%;
   box-shadow: 1px 2px 10px 5px #a9a8a8;
   animation: slider 9s infinite linear;
@@ -841,7 +841,7 @@ footer {
 .box .content {
   margin: 20px 0 0 0;
   position: relative;
-  content: #f3f3f3;
+  max-width: 420px;
 }
 .box .content:before {
   position: absolute;
@@ -917,10 +917,8 @@ footer {
 .right form textarea {
   width: 100%;
   font-size: 1.0625rem;
-  background: #151515;
   padding-left: 10px;
   border: 1px solid #222222;
-  color: #f3f3f3;
 }
 .right form input:focus,
 .right form textarea:focus {
@@ -928,9 +926,6 @@ footer {
 }
 .right form input {
   height: 35px;
-}
-.right form .btn {
-  margin-top: 10px;
 }
 .right form .btn button {
   height: 40px;
