@@ -42,11 +42,11 @@ $(function () {
         url: "https://mailer.decabits.com/api/email",
         type: "POST",
         data: {
-          to: `business@decabits.com`,
+          to: `info@decabits.com`,
           cc: `sahilbathla1@gmail.com`,
-          from: '"Decabits" business@decabits.com',
-          subject: "Website Contact Form:  " + name,
-          text: `You have received a new message from your website contact form.\n\nHere are the details:\n\nName: ${name}\n\nMobile: ${phone}\n\nEmail: ${email}\n\nMessage:\n${message}`,
+          from: '"Decabits" info@decabits.com',
+          subject: "TWL Contact Form:  " + name,
+          text: `You have received a new message from TWL(Football club) contact form.\n\nHere are the details:\n\nName: ${name}\n\nMobile: ${phone}\n\nEmail: ${email}\n\nMessage:\n${message}`,
         },
         cache: false,
         success: function () {
