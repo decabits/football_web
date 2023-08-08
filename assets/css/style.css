@@ -577,9 +577,7 @@ span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 50px 8%;
   position: relative;
-  bottom: 50px;
 }
 
 .item-container {
@@ -821,7 +819,7 @@ nav .img-container img {
 
 footer {
   position: relative;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   background: #111;
 }
@@ -1862,7 +1860,7 @@ img .gallery-image {
   }
 }
 #footer{
-  margin-top: 10%;
+  margin-top: 2%;
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 619px) {
@@ -1887,4 +1885,13 @@ img .gallery-image {
   position: relative;
   width: 100%;
   height:50%;
+}
+
+.page-section{
+  margin: 10px;
+}
+
+.responsive {
+  width: 100%;
+  height: 720px;
 }
