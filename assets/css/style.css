@@ -138,7 +138,7 @@ section.coaches {
   display: flex;
   width: 100%;
   background-position: center;
-  background: url("../images/Gallery/Main\ Background.jpg");
+  background: url("../images/Gallery/Main\ Background-2.jpg");
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -519,6 +519,8 @@ a.skew {
 
 .text {
   width: 540px;
+  margin: 10px;
+  padding: 10px;
 }
 .founder {
   font-weight: 600;
