@@ -10,6 +10,9 @@ $(function () {
     },
     submitSuccess: function ($form, event) {
       event.preventDefault(); // prevent default submit behaviour
+
+      // Disable the form elements to prevent multiple submissions
+      $form.find("input, textarea, button").prop("disabled", true);
       var emailRegex =
         /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
       // get values from FORM
@@ -68,6 +71,8 @@ $(function () {
             $("#contact").modal("hide");
             $("#connect-email").val("");
           }
+          // Re-enable the form elements after a successful submission
+          $form.find("input, textarea, button").prop("disabled", false);
         },
         error: function () {
           // Fail message
@@ -85,6 +90,8 @@ $(function () {
           $("#success > .alert-danger").append("</div>");
           //clear all fields
           $("#contactForm").trigger("reset");
+          // Re-enable the form elements after a successful submission
+          $form.find("input, textarea, button").prop("disabled", false);
         },
       });
     },
