@@ -46,7 +46,7 @@ $(function () {
         type: "POST",
         data: {
           to: `info@decabits.com`,
-          cc: `sahilbathla1@gmail.com`,
+          cc: `contact@trainwithlefty.com,sahilbathla1@gmail.com`,
           from: '"Decabits" info@decabits.com',
           subject: "TWL Contact Form:  " + name,
           text: `You have received a new message from TWL(Football club) contact form.\n\nHere are the details:\n\nName: ${name}\n\nMobile: ${phone}\n\nEmail: ${email}\n\nMessage:\n${message}`,
