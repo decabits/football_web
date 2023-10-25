@@ -3,6 +3,10 @@ $(function () {
     return !a.trim().length;
   }
 
+  $("#success .close").click(function () {
+    $("#success").hide(); // Hide the success dialog
+  });
+
   $("input,textarea").jqBootstrapValidation({
     preventSubmit: true,
     submitError: function ($form, event, errors) {
@@ -53,6 +57,8 @@ $(function () {
         },
         cache: false,
         success: function () {
+          // Clear form data
+          $("input#name, input#email, input#phone, textarea#message").val("");
           // Success message
           $("#success").html("<div class='alert alert-success'>");
           $("#success > .alert-success")
@@ -64,6 +70,7 @@ $(function () {
             "<strong>Your message has been sent. </strong>"
           );
           $("#success > .alert-success").append("</div>");
+          $("#success").show();
 
           //clear & reset all fields
           $("#contactForm").trigger("reset");
@@ -71,6 +78,8 @@ $(function () {
             $("#contact").modal("hide");
             $("#connect-email").val("");
           }
+
+          $("#success").fadeOut(10000);
           // Re-enable the form elements after a successful submission
           $form.find("input, textarea, button").prop("disabled", false);
         },
@@ -88,8 +97,10 @@ $(function () {
               ", it seems that my mail server is not responding. Please check if data is correct or try again later!"
           );
           $("#success > .alert-danger").append("</div>");
+          $("#success").show();
           //clear all fields
           $("#contactForm").trigger("reset");
+          $("#success").fadeOut(10000);
           // Re-enable the form elements after a successful submission
           $form.find("input, textarea, button").prop("disabled", false);
         },

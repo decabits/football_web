@@ -16,6 +16,9 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+body {
+  position: relative;
+}
 
 .row-flex {
   display: flex;

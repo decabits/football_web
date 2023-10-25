@@ -391,6 +391,66 @@
       </div>
     </div>
   </div>
+  <style>
+    /* Style for the success message */
+    #success {
+      position: fixed;
+    top: 8px;
+    right: 16px;
+    z-index: 9999;
+    }
+    .alert-success {
+      position: relative;
+      transition: 0.5s;
+    }
+.alert-success {  
+    padding: 12px 0;  padding-left: 8px;
+    padding-right: 24px;
+    border: 1px solid #5cb85c;
+    background-color: #dff0d8;
+    color: #5cb85c;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.alert-danger {
+    padding: 12px 0;
+  padding-left: 8px;
+    padding-right: 24px;
+    border: 1px solid #d9534f; /* Red border */
+    background-color: #f2dede; /* Light red background */
+    color: #d9534f; /* Red text */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.alert-success .close, .alert-danger .close {
+    color: #5cb85c;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.alert-danger .close {
+    color: #d9534f;
+}
+/* Close button style */
+.alert-success .close {
+    font-size: 18px;
+}
+
+/* Add some padding and margin to the close button */
+.alert-success .close:hover, .alert-danger .close:hover {
+    padding: 5px;
+    margin: -5px;
+}
+
+
+  </style>
+  <div id="success">
+    
+     </div>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script>
     
