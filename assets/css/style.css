@@ -905,7 +905,7 @@ footer {
   
   color: #f3f3f3;
 }
-.center .content .phone {
+.center .content .phone, .center .content .location {
   margin: 15px 0;
   color: #f3f3f3;
 }
